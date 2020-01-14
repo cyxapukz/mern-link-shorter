@@ -15,13 +15,17 @@ export const NavbarBS = () => {
   };
 
   return (
-    <Navbar bg="primary" variant="dark">
+    <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
       <Navbar.Brand href="/">Сокращение ссылок</Navbar.Brand>
-      <Nav className="mr-auto">
-        <Nav.Link href="/create">Создать</Nav.Link>
-        <Nav.Link href="/links">Ссылки</Nav.Link>
-        <Nav.Link href="/" onClick={logoutHandler}>Выйти</Nav.Link>
-      </Nav>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="mr-auto">
+          <Nav.Link href="/create">Создать</Nav.Link>
+          <Nav.Link href="/links">Ссылки</Nav.Link>
+          <Nav.Link href="/" onClick={logoutHandler}>Выйти</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+
     </Navbar>
   );
 }

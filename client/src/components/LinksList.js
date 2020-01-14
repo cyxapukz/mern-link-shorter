@@ -11,7 +11,7 @@ export const LinksList = ({ links }) => {
     <Container>
       <Row>
         <Col>
-          <Table striped bordered hover>
+          <Table responsive striped bordered hover>
             <thead>
               <tr>
                 <th>№</th>
