@@ -1,4 +1,6 @@
 ## mern-link-shorter
+### Example
+Now available on: https://ls.winterzz.ru/. You can use this accout: test@mail.ru;111111
 ### Dependencies:
 ```
 DB: Mongo Atlas,
